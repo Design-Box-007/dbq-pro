@@ -57,7 +57,8 @@ const StackedHighlights = () => {
                 key={index}
                 className={`
                   absolute w-full h-full transition-all duration-1000 ease-in-out
-                  ${getStackStyles(position, highlights.length)}
+                  ${getStackStyles(position)}
+
                 `}
               >
                 {/* Card Container */}
@@ -88,7 +89,7 @@ const StackedHighlights = () => {
 };
 
 // Helper function to get styles based on position in stack
-const getStackStyles = (position: number, totalItems: number) => {
+const getStackStyles = (position: number) => {
   // Base transformations
   const transformations = [
     'translate-y-0 scale-100 opacity-100 z-30', // Current (front)

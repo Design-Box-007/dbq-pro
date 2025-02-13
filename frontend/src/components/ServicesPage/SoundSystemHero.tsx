@@ -22,9 +22,10 @@ const SoundSystemHero = () => {
                 Powering Every Decibel with Precision
               </h1>
               <ProgressBar/>
-              <p className="text-white text-lg md:text-2xl ">
-                Sound isn't just about volume—it's about clarity, depth, and impact. At DBQ Pro, we provide state-of-the-art sound system solutions tailored for concerts, corporate events, weddings, conferences, and live performances. Whether you need a powerful PA system for a music festival or a discreet audio setup for a corporate event, we ensure every sound is heard exactly as intended.
-              </p>
+              <p className="text-white text-lg md:text-2xl">
+  Sound isn&apos;t just about volume—it&apos;s about clarity, depth, and impact. At DBQ Pro, we provide state-of-the-art sound system solutions tailored for concerts, corporate events, weddings, conferences, and live performances. Whether you need a powerful PA system for a music festival or a discreet audio setup for a corporate event, we ensure every sound is heard exactly as intended.
+</p>
+
   
               {/* CTA Buttons */}
               <div className="flex flex-col sm:flex-row gap-4">
