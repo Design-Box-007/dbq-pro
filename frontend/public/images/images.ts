@@ -7,7 +7,8 @@ import img16 from './png/Rectangle 180 (1).png';
 import img17 from './png/Rectangle 180 (3).png';
 import img18 from './png/Frame 1000004902.png';
 import logo from "./png/DBQ_Pro_500X500.png";
-
+import img19 from './png/service.png';
+import img20 from './png/Rectangle 182.png';
 
 import img3 from './icons/Capa_1.png';
 import img4 from './icons/Clip path group.png';
@@ -30,6 +31,8 @@ const png = {
     img17,
     img18,
     logo,
+    img19,
+    img20,
 
    
 

@@ -11,17 +11,16 @@ const Navbar = () => {
 
   useEffect(() => {
     const handleScroll = () => {
-      if (window.scrollY > 50) {
-        setIsScrolled(true);
-      } else {
-        setIsScrolled(false);
-      }
+      setIsScrolled(window.scrollY > 50);
     };
-
+  
+    // Run on mount to set the initial state
+    handleScroll();
+  
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
-
+  
   return (
     <>
       <nav
@@ -33,11 +32,7 @@ const Navbar = () => {
           <div className="flex justify-between items-center">
             <Link
               href="/"
-              className={`text-xl font-bold relative after:content-[''] after:absolute after:w-0 after:h-0.5 after:left-0 after:bottom-0 after:transition-all hover:after:w-full ${
-                isScrolled || isOpen
-                  ? 'text-black after:bg-black '
-                  : 'text-white after:bg-white'
-              }`}
+            
             >
               <Image
               src={images.png.logo}

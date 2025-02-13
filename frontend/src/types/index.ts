@@ -41,3 +41,18 @@ export interface FormData {
   country: string;
   message: string;
 }
+
+export interface SoundSystemProps {
+  title: string;
+  imageSrc: string | StaticImageData;
+  imageAlt?: string;
+}
+export interface CTAButtonProps {
+  href: string;
+  text: string;
+  bgColor: string;
+  hoverBgColor: string;
+  textColor: string;
+  borderColor: string;
+  hoverBorderColor: string;
+}
