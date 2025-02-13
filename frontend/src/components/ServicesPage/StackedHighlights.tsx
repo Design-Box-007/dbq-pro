@@ -41,9 +41,9 @@ const StackedHighlights = () => {
 
   return (
     <div className="min-h-screen">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-16">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-8 pb-0 md:py-8 ">
         {/* Title Section */}
-        <h1 className="text-4xl sm:text-6xl md:text-9xl font-bold text-white mb-8 sm:mb-16">Our Highlights</h1>
+        <h1 className="text-5xl  md:text-9xl font-normal text-white mb-8 sm:mb-16">Our Highlights</h1>
 
         {/* Stacked Images Container - Modified height for mobile */}
         <div className="relative h-[400px] sm:h-[500px] md:h-[600px] w-full">
