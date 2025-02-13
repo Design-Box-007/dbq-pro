@@ -87,6 +87,7 @@ const HeroTextSection = () => {
             </div>
           </div>
         </div>
+        
       </div>
     </div>
   );

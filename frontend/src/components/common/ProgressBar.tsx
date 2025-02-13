@@ -3,7 +3,7 @@ import { IoMdArrowDropleft, IoMdArrowDropright } from "react-icons/io";
 
 export default function ProgressBar() {
   return (
-    <div className="py-0 md:py-6">
+    <div className="py-0 md:py-8">
       <div className="max-w-7xl mx-auto px-4">
         <div className="relative w-full h-[4px] bg-gray-700 rounded-full flex items-center">
           {/* Left-side arrow */}

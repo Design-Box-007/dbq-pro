@@ -16,7 +16,7 @@ const BlogCard: React.FC<BlogCardProps> = ({ blog }) => {
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5 }}
       whileHover={{ y: -8 }}
-      className="group flex flex-col h-[450px] bg-[#242424] rounded-lg overflow-hidden shadow-[0px_4px_14px_0px_#FBFBFB29]"
+      className="group flex flex-col h-[455px] md:h-[450px] bg-[#242424] rounded-lg overflow-hidden shadow-[0px_4px_14px_0px_#FBFBFB29]"
     >
       <a href={blog.link} className="flex flex-col flex-1">
         {/* Image Section */}

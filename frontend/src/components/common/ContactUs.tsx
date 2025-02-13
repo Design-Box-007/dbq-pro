@@ -32,7 +32,7 @@ const ContactUs = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
           {/* Left Section - Contact Information */}
           <div className="space-y-8">
-            <h2 className="text-[var(--green)] text-8xl font-normal mb-4">
+            <h2 className="text-[var(--green)] text-6xl md:text-8xl font-normal mb-4">
               Contact Us
             </h2>
             

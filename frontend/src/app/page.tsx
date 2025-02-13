@@ -9,14 +9,20 @@ import {faqData} from '@/data/faq';
 
 export default function Home() {
   return (
-    <div className="bg-[var( --foreground)]">
+    <div className="bg-[var(--background)] ">
       <HeroTextSection />
+      <div className="relative">
+      <div className="px-4 md:px-6 md:mt-4">
       <ProgressBar />
+      </div>
+      <div className="md:-mt-8">
       <ServicesGrid
   heading="Services We Provide"
   headingSize="text-5xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl"
   titleSize="text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl 2xl:text-3xl"
 />
+</div>
+</div>
      <AboutDBQPro/>
      <OurBlogs/>
      <FAQSection

@@ -95,15 +95,16 @@ const Navbar = () => {
             }`}
           >
             <div className="flex flex-col space-y-4 pt-4 px-10">
-              {['Home', 'About Us', 'Services'].map((item) => (
-                <Link
-                  key={item}
-                  href={`/${item.toLowerCase().replace(' ', '-')}`}
-                  className="transform transition-transform hover:translate-x-2 text-black duration-300"
-                >
-                  {item}
-                </Link>
-              ))}
+            {['Home', 'About Us', 'Services'].map((item) => (
+  <Link
+    key={item}
+    href={item === 'Home' ? '/' : `/${item.toLowerCase().replace(/\s+/g, '-')}`}
+    className="transform transition-transform hover:translate-x-2 text-black duration-300"
+  >
+    {item}
+  </Link>
+))}
+
               <button className="w-fit px-4 py-2 rounded-xl bg-white text-[var(--green)] hover:bg-gray-700 hover:text-black transition-all duration-300 flex items-center group">
                 <span className="font-semibold text-base transition-all duration-300">
                   Get In Touch
