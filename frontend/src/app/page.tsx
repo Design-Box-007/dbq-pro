@@ -9,7 +9,7 @@ import {faqData} from '@/data/faq';
 
 export default function Home() {
   return (
-    <>
+    <div className="bg-[var( --foreground)]">
       <HeroTextSection />
       <ProgressBar />
       <ServicesGrid
@@ -35,6 +35,6 @@ export default function Home() {
           allowFullScreen
         ></iframe>
       </div> */}
-    </>
+    </div>
   );
 }
