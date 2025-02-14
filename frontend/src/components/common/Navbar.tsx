@@ -37,12 +37,13 @@ const Navbar = () => {
             {/* Logo */}
             <Link href="/">
             <Image
-  src={images.png.logo}
+  src={isScrolled || isOpen ? images.png.img22 : images.png.logo}
   alt="logo"
   className={`w-20 h-16 object-cover transition-all duration-300 ${
     isOpen ? "ml-0" : "-ml-5 md:-ml-4"
   }`}
 />
+
 
             </Link>
 
