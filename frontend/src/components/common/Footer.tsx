@@ -15,7 +15,7 @@ const Footer = () => {
  
   return (
     <div className="relative w-full bg-[#444444] mt-16">
-        <div className='max-w-7xl py-6 px-6 md:px-10'>
+        <div className='max-w-7xl lg:mx-16 py-6 px-6 md:px-10'>
       {/* Navigation Bar */}
       <nav className="top-0 left-0 w-full z-20 py-4">
       <div className="max-w-7xl mx-auto flex justify-between items-center">
