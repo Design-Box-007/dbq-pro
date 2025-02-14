@@ -40,7 +40,7 @@ const HeroTextSection = () => {
               />
               
               <CTAButton 
-                href="/services" 
+                href="/#contactus" 
                 text="Get a Consultation" 
                 bgColor="bg-[var(--green)]" 
                 hoverBgColor="bg-white" 
@@ -59,7 +59,7 @@ const HeroTextSection = () => {
               <div className="flex flex-row gap-4 ml-16">
                 {/* CTA Buttons */}
                 <CTAButton 
-                  href="/services" 
+                  href="/#servicegrid" 
                   text="Explore Our Services" 
                   bgColor="bg-[#222222]" 
                   hoverBgColor="bg-[var(--green)]" 
@@ -69,7 +69,7 @@ const HeroTextSection = () => {
                 />
                 
                 <CTAButton 
-                  href="/services" 
+                  href="/#contactus" 
                   text="Get a Consultation" 
                   bgColor="bg-[var(--green)]" 
                   hoverBgColor="bg-white" 

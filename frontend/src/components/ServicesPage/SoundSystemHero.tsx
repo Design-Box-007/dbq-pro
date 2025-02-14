@@ -31,7 +31,7 @@ const SoundSystemHero = () => {
               <div className="flex flex-col sm:flex-row gap-4">
               {/* CTA Buttons */}
               <CTAButton 
-                href="/services" 
+                href="/services#servicegrid" 
                 text="Explore Our Other Services" 
                 bgColor="bg-[#222222]" 
                 hoverBgColor="bg-[var(--green)]" 
@@ -41,7 +41,7 @@ const SoundSystemHero = () => {
               />
               
               <CTAButton 
-                href="/services" 
+                href="/services#contactus" 
                 text="Get a Consultation" 
                 bgColor="bg-[var(--green)]" 
                 hoverBgColor="bg-white" 

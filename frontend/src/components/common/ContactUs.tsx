@@ -58,7 +58,7 @@ const ContactUs = () => {
   };
 
   return (
-    <div className="w-full py-12 px-4 sm:px-6 lg:px-9">
+    <div className="w-full py-12 px-4 sm:px-6 lg:px-9" id="contactus">
       <div className="max-w-7xl mx-auto bg-[#444444] rounded-2xl p-6 md:p-8 shadow-xl">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
           {/* Left Section - Contact Information */}
