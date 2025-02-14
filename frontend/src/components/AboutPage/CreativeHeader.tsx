@@ -8,11 +8,12 @@ const CreativeHeader = () => {
         
         {/* Header Section */}
         <div className="mb-6 md:mb-8  sm:text-left">
-          <h1 className="text-4xl sm:text-5xl md:text-7xl lg:text-8xl font-normal leading-tight">
-            <span className="text-white">Let's Create Something</span>
-            <br />
-            <span className="text-[var(--green)]">Extraordinary</span>
-          </h1>
+        <h1 className="text-4xl sm:text-5xl md:text-7xl lg:text-8xl font-normal leading-tight">
+  <span className="text-white">Let&apos;s Create Something</span>
+  <br />
+  <span className="text-[var(--green)]">Extraordinary</span>
+</h1>
+
         </div>
 
         {/* Contact Section */}

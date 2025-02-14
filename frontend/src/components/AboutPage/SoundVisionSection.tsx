@@ -29,20 +29,21 @@ const SoundVisionSection = () => {
 
             {/* Text Content */}
             <div className="flex flex-col justify-center space-y-6">
-              <h2 className="text-3xl lg:text-4xl font-bold">About DBQ Pro</h2>
-              <p className="text-gray-200 text-lg">
-                At DBQ Pro, we are more than just an audiovisual production
-                provider—we are the architects of immersive experiences. With a
-                rich history of organizing events, gatherings, and high-grade
-                productions, we bring the perfect blend of technical skill and
-                robust workflow. From setup to execution, we've got you covered.
-              </p>
-              <p className="text-gray-200 text-lg">
-                With years of industry expertise, our team of sound engineers,
-                lighting specialists, and event specialists ensures that every
-                event is executed with flawless precision.
-              </p>
-            </div>
+  <h2 className="text-3xl lg:text-4xl font-bold">About DBQ Pro</h2>
+  <p className="text-gray-200 text-lg">
+    At DBQ Pro, we are more than just an audiovisual production
+    provider&mdash;we are the architects of immersive experiences. With a
+    rich history of organizing events, gatherings, and high-grade
+    productions, we bring the perfect blend of technical skill and
+    robust workflow. From setup to execution, we&apos;ve got you covered.
+  </p>
+  <p className="text-gray-200 text-lg">
+    With years of industry expertise, our team of sound engineers,
+    lighting specialists, and event specialists ensures that every
+    event is executed with flawless precision.
+  </p>
+</div>
+
           </div>
         </div>
       </div>
