@@ -38,9 +38,14 @@ const ContactUs = () => {
   
       setResponseMessage("Message sent successfully!");
       setFormData({ name: "", email: "", mobile: "", country: "", message: "" });
-    } catch (error: any) {
-      setResponseMessage(error.message);
-    } finally {
+    } catch (error) {
+      if (error instanceof Error) {
+        setResponseMessage(error.message);
+      } else {
+        setResponseMessage("An unexpected error occurred");
+      }
+    }
+     finally {
       setLoading(false);
     }
   };
