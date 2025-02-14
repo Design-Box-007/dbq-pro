@@ -1,7 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import Image from "next/image";
-import {Blog} from '@/types/index'
+import { Blog } from '@/types/index'
 // Define Props for BlogCard
 interface BlogCardProps {
   blog: Blog;
@@ -35,7 +35,7 @@ const BlogCard: React.FC<BlogCardProps> = ({ blog }) => {
         </motion.div>
 
         {/* Text Section */}
-        <div className="flex flex-col flex-1 p-6">
+        <div className="flex flex-col flex-1 p-6 sm:p-4 max-[320px]:p-4">
           <h3 className="text-lg font-semibold text-white mb-3 group-hover:text-[#83B602] transition-colors line-clamp-2">
             {blog.title}
           </h3>
