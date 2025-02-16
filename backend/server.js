@@ -24,6 +24,8 @@ console.log("🔑 Email Pass:", process.env.EMAIL_PASS ? "Loaded" : "Not Loaded"
 // Contact Form Route
 app.post("/contact", async (req, res) => {
   const { name, email, mobile, country, message } = req.body;
+  console.log(req.body);
+  
 
   if (!name || !email || !message) {
     console.log("❌ Missing required fields");
@@ -40,11 +42,12 @@ app.post("/contact", async (req, res) => {
     });
 
     let mailOptions = {
-      from: process.env.EMAIL_USER,
-      to: "your-receiving-email@example.com",
+      from:email,
+      to: process.env.EMAIL_USER, // Change this to a valid email
       subject: "New Contact Form Submission",
       text: `Name: ${name}\nEmail: ${email}\nMobile: ${mobile}\nCountry: ${country}\nMessage: ${message}`,
     };
+    
 
     // Send the email
     let info = await transporter.sendMail(mailOptions);

@@ -19,12 +19,13 @@ const SoundSystemHero = () => {
             {/* Content section */}
             <div className="space-y-8">
               <h1 className="text-3xl md:text-5xl lg:text-7xl font-normal tracking-tight">
-                Powering Every Decibel with Precision
+              Audio Solutions by DBQPro
               </h1>
               <ProgressBar/>
               <p className="text-white text-lg md:text-2xl">
-  Sound isn&apos;t just about volume—it&apos;s about clarity, depth, and impact. At DBQ Pro, we provide state-of-the-art sound system solutions tailored for concerts, corporate events, weddings, conferences, and live performances. Whether you need a powerful PA system for a music festival or a discreet audio setup for a corporate event, we ensure every sound is heard exactly as intended.
+  At DBQPro, we provide premium audio solutions designed to deliver exceptional sound quality for events of all sizes. Whether you're hosting an intimate gathering or a large-scale production, we offer state-of-the-art audio equipment and expert services that ensure every moment is heard crystal clear. From audio system rentals and microphones to live sound engineering and sound system integration, our team has the expertise to make your event a resounding success.
 </p>
+
 
   
               {/* CTA Buttons */}

@@ -36,7 +36,7 @@ const WhyChooseDBQ = () => {
         </h2>
 
         {/* Features Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2  gap-6 md:gap-8">
           {features.map((feature, index) => (
             <div 
               key={index}

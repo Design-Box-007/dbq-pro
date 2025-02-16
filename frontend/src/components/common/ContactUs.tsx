@@ -14,7 +14,6 @@ const ContactUs = () => {
 
   const [loading, setLoading] = useState(false);
   const [responseMessage, setResponseMessage] = useState<string | null>(null);
-
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
   
@@ -31,24 +30,34 @@ const ContactUs = () => {
       });
   
       const data = await res.json();
+      console.log(formData);
   
       if (!res.ok) {
         throw new Error(data.error || "Something went wrong");
       }
   
       setResponseMessage("Message sent successfully!");
-      setFormData({ name: "", email: "", mobile: "", country: "", message: "" });
+  
+      // Reload page after 2 seconds on success
+      setTimeout(() => {
+        window.location.reload();
+      }, 2000);
     } catch (error) {
       if (error instanceof Error) {
         setResponseMessage(error.message);
       } else {
         setResponseMessage("An unexpected error occurred");
       }
-    }
-     finally {
+  
+      // Reload page after 2 seconds on error
+      setTimeout(() => {
+        window.location.reload();
+      }, 2000);
+    } finally {
       setLoading(false);
     }
   };
+  
   
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     setFormData({
