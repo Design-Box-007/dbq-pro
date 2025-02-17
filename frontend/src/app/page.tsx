@@ -26,7 +26,7 @@ export default function Home() {
 </div>
 </div>
      <AboutDBQPro/>
-     <OurBlogs/>
+     {/* <OurBlogs/> */}
      <FAQSection
         title="Frequently Asked Questions"
         faqs={faqData}

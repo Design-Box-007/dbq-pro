@@ -1,14 +1,13 @@
 import Image from "next/image";
+import { images } from "../../../public/assets";
+
 
 const logos = [
-  "/api/placeholder/96/32",
-  "/api/placeholder/96/32",
-  "/api/placeholder/96/32",
-  "/api/placeholder/96/32",
-  "/api/placeholder/96/32",
-  "/api/placeholder/96/32",
-  "/api/placeholder/96/32",
-  "/api/placeholder/96/32",
+    images.png.t1,
+    images.png.t2,
+    images.png.t3,
+    images.png.t4,
+ 
 ];
 
 const TrustedBy = () => {
@@ -20,10 +19,16 @@ const TrustedBy = () => {
         </h3>
 
         {/* Logos Grid */}
-        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-6 items-center justify-items-center mx-auto">
+        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-8 items-center justify-center mx-auto">
           {logos.map((logo, index) => (
-            <div key={index} className="w-24 h-8">
-              <Image src={logo} alt={`Company logo ${index + 1}`} width={96} height={32} className="w-full h-full object-contain" />
+            <div key={index} className="w-36 h-36 flex justify-center items-center">
+              <Image
+                src={logo}
+                alt={`Company logo ${index + 1}`}
+                width={144}
+                height={144}
+                className="w-full h-full object-contain aspect-[1/1]"
+              />
             </div>
           ))}
         </div>

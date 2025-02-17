@@ -11,6 +11,10 @@ import img19 from './png/service.png';
 import img20 from './png/Rectangle 182.png';
 import img21 from './png/abouthero.png';
 import img22 from './png/Logo_Png.png';
+import t1 from './png/t1.png';
+import t2 from './png/t2.png';
+import t3 from './png/t3.png';
+import t4 from './png/t4.png';
 
 import img3 from './icons/Capa_1.png';
 import img4 from './icons/Clip path group.png';
@@ -37,6 +41,11 @@ const png = {
     img20,
     img21,
     img22,
+    t1,
+    t2,
+    t3,
+    t4
+    
 
    
 
