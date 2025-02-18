@@ -12,7 +12,7 @@ export default function services() {
   return (
 
     <div>
-      <SoundSystemHero imageSrc={images.png.img19}/>
+      <SoundSystemHero imageSrc={images.png.img19} imagetitle='service' title='service-title' description='somedescription'/>
       <SoundSolutions />
       <StackedHighlights />
       <ServicesGrid
