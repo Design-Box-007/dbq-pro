@@ -5,10 +5,14 @@ import ProgressBar from "../common/ProgressBar";
 
 interface SoundSystemHeroProps {
   imageSrc: string | StaticImageData;
+  imagetitle: string
+  title: string;
+  description: string;
 }
 
 
-const SoundSystemHero: React.FC<SoundSystemHeroProps> = ({ imageSrc }) => {
+
+const SoundSystemHero: React.FC<SoundSystemHeroProps> = ({ imageSrc, title, description, imagetitle }) => {
   return (
     <div className="relative min-h-screen text-white py-8 px-4 sm:px-6 lg:px-8 mt-6 ">
       {/* Main container */}
@@ -17,17 +21,17 @@ const SoundSystemHero: React.FC<SoundSystemHeroProps> = ({ imageSrc }) => {
         <div className="relative rounded-lg overflow-hidden">
 
           <ImageComponent
-            title="Sound Systems"
+            title={imagetitle}
             imageSrc={imageSrc}
           />
           {/* Content section */}
           <div className="space-y-8">
             <h1 className="text-3xl md:text-5xl lg:text-7xl font-normal tracking-tight">
-              Audio Solutions by DBQPro
+             {title}
             </h1>
             <ProgressBar />
             <p className="text-white text-lg md:text-2xl">
-              At DBQPro, we provide premium audio solutions designed to deliver exceptional sound quality for events of all sizes. Whether you're hosting an intimate gathering or a large-scale production, we offer state-of-the-art audio equipment and expert services that ensure every moment is heard crystal clear. From audio system rentals and microphones to live sound engineering and sound system integration, our team has the expertise to make your event a resounding success.
+             {description}
             </p>
 
 

@@ -56,3 +56,9 @@ export interface CTAButtonProps {
   borderColor: string;
   hoverBorderColor: string;
 }
+export interface ServiceHeroData {
+  image: string | StaticImageData;  // Allow both string and StaticImageData
+  imagetitle: string;
+  title: string;
+  description: string;
+}
