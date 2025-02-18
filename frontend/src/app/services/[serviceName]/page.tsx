@@ -1,4 +1,4 @@
-import { ServiceData, ServiceFAQ, ServiceHeroData, Services } from '@/types/index';
+import { ServiceData, ServiceFAQ, Services } from '@/types/index';
 import { services } from '@/data/services';
 import formatToHyphenated from '@/utils/formattedURL';
 import React from 'react';

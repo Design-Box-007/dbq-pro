@@ -77,7 +77,7 @@ export interface ServiceBox {
 }
 
 export interface ServiceData {
-  serviceId: String;
+  serviceId: string;
   ServiceData: ServiceBox[];
 }
 export interface ServiceFAQ {
