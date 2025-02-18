@@ -3,7 +3,6 @@ import ProgressBar from "@/components/common/ProgressBar";
 import AboutDBQPro from "@/components/homepage/AboutDBQPro";
 import FAQSection from "@/components/homepage/FAQSection";
 import HeroTextSection from "@/components/homepage/HeroSection";
-import OurBlogs from "@/components/homepage/OurBlogs";
 import ServicesGrid from "@/components/homepage/ServicesGrid";
 import {faqData} from '@/data/faq';
 

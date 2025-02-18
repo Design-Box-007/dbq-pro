@@ -1,5 +1,4 @@
 import { StaticImageData } from "next/image";
-import { images } from "../../../public/assets";
 import CTAButton from "../common/CTAbuttons";
 import ImageComponent from "../common/Image";
 import ProgressBar from "../common/ProgressBar";
