@@ -1,6 +1,5 @@
 import React from 'react'
 import SoundSystemHero from '@/components/ServicesPage/SoundSystemHero'
-import SoundSolutions from '@/components/ServicesPage/SoundSolutions'
 import StackedHighlights from '@/components/ServicesPage/StackedHighlights'
 import ServicesGrid from '@/components/homepage/ServicesGrid'
 import FAQSection from '@/components/homepage/FAQSection'
@@ -13,7 +12,6 @@ export default function services() {
 
     <div>
       <SoundSystemHero imageSrc={images.png.img19} imagetitle='service' title='service-title' description='somedescription'/>
-      <SoundSolutions />
       <StackedHighlights />
       <ServicesGrid
         heading="A Lot More to Explore"
