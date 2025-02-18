@@ -1,10 +1,11 @@
 "use client";
+
 import React, { useState } from "react";
 import { Mail, Phone, MapPin } from "lucide-react";
-import { FormData } from "@/types/index";
+import { sendEmail } from "@/app/actions/sendEmail";
 
 const ContactUs = () => {
-  const [formData, setFormData] = useState<FormData>({
+  const [formData, setFormData] = useState({
     name: "",
     email: "",
     mobile: "",
@@ -14,56 +15,22 @@ const ContactUs = () => {
 
   const [loading, setLoading] = useState(false);
   const [responseMessage, setResponseMessage] = useState<string | null>(null);
+
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-  
     setLoading(true);
     setResponseMessage(null);
-  
-    try {
-      const res = await fetch("http://localhost:5000/contact", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify(formData),
-      });
-  
-      const data = await res.json();
-      console.log(formData);
-  
-      if (!res.ok) {
-        throw new Error(data.error || "Something went wrong");
-      }
-  
+
+    const res = await sendEmail(formData);
+
+    if (res.success) {
       setResponseMessage("Message sent successfully!");
-  
-      // Reload page after 2 seconds on success
-      setTimeout(() => {
-        window.location.reload();
-      }, 2000);
-    } catch (error) {
-      if (error instanceof Error) {
-        setResponseMessage(error.message);
-      } else {
-        setResponseMessage("An unexpected error occurred");
-      }
-  
-      // Reload page after 2 seconds on error
-      setTimeout(() => {
-        window.location.reload();
-      }, 2000);
-    } finally {
-      setLoading(false);
+      setTimeout(() => window.location.reload(), 2000);
+    } else {
+      setResponseMessage("Failed to send email. Try again.");
     }
-  };
-  
-  
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
-    setFormData({
-      ...formData,
-      [e.target.name]: e.target.value,
-    });
+
+    setLoading(false);
   };
 
   return (
@@ -122,14 +89,14 @@ const ContactUs = () => {
 
             <form onSubmit={handleSubmit} className="space-y-4">
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                <input type="text" name="name" placeholder="Name" value={formData.name} onChange={handleChange} className="w-full bg-transparent text-white px-4 py-3 rounded-lg border-b-2 border-[#f5f5f5] focus:border-[var(--green)] focus:outline-none focus:ring-0 transition-colors" />
-                <input type="email" name="email" placeholder="Email" value={formData.email} onChange={handleChange} className="w-full bg-transparent text-white px-4 py-3 rounded-lg border-b-2 border-[#f5f5f5] focus:border-[var(--green)] focus:outline-none focus:ring-0 transition-colors" />
+                <input type="text" name="name" placeholder="Name" value={formData.name} onChange={(e) => setFormData({ ...formData, name: e.target.value })} required className="w-full bg-transparent text-white px-4 py-3 rounded-lg border-b-2 border-[#f5f5f5] focus:border-[var(--green)] focus:outline-none focus:ring-0 transition-colors" />
+                <input type="email" name="email" placeholder="Email" value={formData.email} onChange={(e) => setFormData({ ...formData, email: e.target.value })} required className="w-full bg-transparent text-white px-4 py-3 rounded-lg border-b-2 border-[#f5f5f5] focus:border-[var(--green)] focus:outline-none focus:ring-0 transition-colors" />
               </div>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                <input type="tel" name="mobile" placeholder="Mobile No" value={formData.mobile} onChange={handleChange} className="w-full bg-transparent text-white px-4 py-3 rounded-lg border-b-2 border-[#f5f5f5] focus:border-[var(--green)] focus:outline-none focus:ring-0 transition-colors" />
-                <input type="text" name="country" placeholder="Country" value={formData.country} onChange={handleChange} className="w-full bg-transparent text-white px-4 py-3 rounded-lg border-b-2 border-[#f5f5f5] focus:border-[var(--green)] focus:outline-none focus:ring-0 transition-colors" />
+                <input type="tel" name="mobile" placeholder="Mobile No" value={formData.mobile} onChange={(e) => setFormData({ ...formData, mobile: e.target.value })} required className="w-full bg-transparent text-white px-4 py-3 rounded-lg border-b-2 border-[#f5f5f5] focus:border-[var(--green)] focus:outline-none focus:ring-0 transition-colors" />
+                <input type="text" name="country" placeholder="Country" value={formData.country} onChange={(e) => setFormData({ ...formData, country: e.target.value })} required className="w-full bg-transparent text-white px-4 py-3 rounded-lg border-b-2 border-[#f5f5f5] focus:border-[var(--green)] focus:outline-none focus:ring-0 transition-colors" />
               </div>
-              <textarea name="message" placeholder="How can we help you?" value={formData.message} onChange={handleChange} rows={4} className="w-full bg-transparent text-white px-4 py-3 rounded-lg border-b-2 border-[#f5f5f5] focus:border-[var(--green)] focus:outline-none focus:ring-0 transition-colors"></textarea>
+              <textarea name="message" placeholder="How can we help you?" value={formData.message} onChange={(e) => setFormData({ ...formData, message: e.target.value })} required rows={4} className="w-full bg-transparent text-white px-4 py-3 rounded-lg border-b-2 border-[#f5f5f5] focus:border-[var(--green)] focus:outline-none focus:ring-0 transition-colors"></textarea>
               <button type="submit" disabled={loading} className="w-full bg-[var(--green)] text-white py-3 rounded-lg font-semibold hover:bg-[#9CCF03] transition-colors focus:outline-none focus:ring-2 focus:ring-[var(--green)] focus:ring-offset-2 focus:ring-offset-[#333333]">
                 {loading ? "Sending..." : "Submit"}
               </button>
