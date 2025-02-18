@@ -1,14 +1,16 @@
-import services from "@/data/servicedetail";
-const SoundServices = () => {
-   
-    return (
-      <div>
-        <div className="mx-auto">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            {services.map((service, index) => (
-              <div
-                key={index}
-                className={`
+import { ServiceBox } from "@/types";
+
+
+const SoundServices: React.FC<{ services: ServiceBox[] }> = ({ services }) => {
+
+  return (
+    <div>
+      <div className="mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+          {services.map((service: ServiceBox, index: number) => (
+            <div
+              key={index}
+              className={`
                   rounded-lg 
                   p-6 
                   transition-all 
@@ -21,32 +23,17 @@ const SoundServices = () => {
                   hover:brightness-110
                   ${service.wide ? "md:col-span-2 p-10" : ""}
                 `}
-              >
-                {service.wide ? (
-                  // Layout for WIDE card
-                  <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-6">
-                    <h2 className="text-white text-3xl md:text-5xl font-bold">
-                      {service.title}
-                    </h2>
-                    <div className="md:w-2/3">
-                      <p className="text-white mb-4 text-lg md:text-xl">
-                        {service.description}
-                      </p>
-                      <ul className="space-y-2">
-                        {service.features.map((feature, featureIndex) => (
-                          <li key={featureIndex} className="flex items-start text-white text-lg md:text-xl">
-                            <span className="text-white mr-2 mt-1">•</span>
-                            {feature}
-                          </li>
-                        ))}
-                      </ul>
-                    </div>
-                  </div>
-                ) : (
-                  // Layout for NORMAL card
-                  <>
-                    <h2 className="text-white text-2xl md:text-4xl font-medium mb-6">{service.title}</h2>
-                    <p className="text-white mb-4 text-lg md:text-xl">{service.description}</p>
+            >
+              {service.wide ? (
+                // Layout for WIDE card
+                <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-6">
+                  <h2 className="text-white text-3xl md:text-5xl font-bold">
+                    {service.title}
+                  </h2>
+                  <div className="md:w-2/3">
+                    {/* <p className="text-white mb-4 text-lg md:text-xl">
+                      {service.description}
+                    </p> */}
                     <ul className="space-y-2">
                       {service.features.map((feature, featureIndex) => (
                         <li key={featureIndex} className="flex items-start text-white text-lg md:text-xl">
@@ -55,14 +42,29 @@ const SoundServices = () => {
                         </li>
                       ))}
                     </ul>
-                  </>
-                )}
-              </div>
-            ))}
-          </div>
+                  </div>
+                </div>
+              ) : (
+                // Layout for NORMAL card
+                <>
+                  <h2 className="text-white text-2xl md:text-4xl font-medium mb-6">{service.title}</h2>
+                  {/* <p className="text-white mb-4 text-lg md:text-xl">{service.description}</p> */}
+                  <ul className="space-y-2">
+                    {service.features.map((feature, featureIndex) => (
+                      <li key={featureIndex} className="flex items-start text-white text-lg md:text-xl">
+                        <span className="text-white mr-2 mt-1">•</span>
+                        {feature}
+                      </li>
+                    ))}
+                  </ul>
+                </>
+              )}
+            </div>
+          ))}
         </div>
       </div>
-    );
-  };
-  
-  export default SoundServices;
+    </div>
+  );
+};
+
+export default SoundServices;

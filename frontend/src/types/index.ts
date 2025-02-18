@@ -1,26 +1,25 @@
 import type { StaticImageData } from "next/image";
 
 export interface Service {
-    title: string;
-    image: string | StaticImageData; // Allow both types
-  }
-  
-  // Define Blog Type
- export interface Blog {
-      id: number;
-      title: string;
-      description: string;
-      image: string | StaticImageData; // Allow both types
-      link: string;
-    }
+  title: string;
+  image: string | StaticImageData; // Allow both types
+}
 
-  // Define Props for BlogCard
- export interface BlogCardProps {
+// Define Blog Type
+export interface Blog {
+  id: number;
+  title: string;
+  description: string;
+  image: string | StaticImageData; // Allow both types
+  link: string;
+}
+
+// Define Props for BlogCard
+export interface BlogCardProps {
   blog: Blog;
 }
 
 export interface FAQItem {
-  id: number;
   question: string;
   answer: string;
 }
@@ -62,3 +61,27 @@ export interface ServiceHeroData {
   title: string;
   description: string;
 }
+export interface Services {
+  id: string;
+  title: string;
+  icon: StaticImageData;
+  heroImage: StaticImageData;
+  serviceDataHeader: string;
+  description: string;
+}
+
+export interface ServiceBox {
+  title: string;
+  features: string[];
+  wide: boolean;
+}
+
+export interface ServiceData {
+  serviceId: String;
+  ServiceData: ServiceBox[];
+}
+export interface ServiceFAQ {
+  serviceId: string;
+  FAQ: FAQItem[];
+}
+

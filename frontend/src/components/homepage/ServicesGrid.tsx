@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { services } from "@/data/services";
 import formatToHyphenated from "@/utils/formattedURL";
+import { Services } from "@/types";
 
 
 interface ServiceGridProps {
@@ -22,7 +23,7 @@ const ServicesGrid: React.FC<ServiceGridProps> = ({
 
         {/* Square Grid */}
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
-          {services.map((service, index) => (
+          {services.map((service: Services, index: number) => (
             <Link key={index} href={`/services/${formatToHyphenated(service.title)}`} passHref>
               <div
                 className="bg-white rounded-3xl flex flex-col items-center justify-center 
@@ -30,7 +31,7 @@ const ServicesGrid: React.FC<ServiceGridProps> = ({
                            aspect-square cursor-pointer"
               >
                 <Image
-                  src={service.image}
+                  src={service.icon}
                   alt={service.title}
                   width={70}
                   height={70}
