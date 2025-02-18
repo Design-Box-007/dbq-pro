@@ -6,12 +6,13 @@ import ServicesGrid from '@/components/homepage/ServicesGrid'
 import FAQSection from '@/components/homepage/FAQSection'
 import { faqData } from '@/data/faq'
 import ContactUs from '@/components/common/ContactUs'
+import { images } from '../../../public/assets'
 
 export default function services() {
   return (
 
     <div>
-      <SoundSystemHero />
+      <SoundSystemHero imageSrc={images.png.img19}/>
       <SoundSolutions />
       <StackedHighlights />
       <ServicesGrid
