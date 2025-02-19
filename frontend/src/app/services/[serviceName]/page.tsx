@@ -4,7 +4,7 @@ import formatToHyphenated from '@/utils/formattedURL';
 import React from 'react';
 import SoundSystemHero from '@/components/ServicesPage/SoundSystemHero';
 import SoundSolutions from '@/components/ServicesPage/SoundSolutions';
-import StackedHighlights from '@/components/ServicesPage/StackedHighlights';
+// import StackedHighlights from '@/components/ServicesPage/StackedHighlights';
 import ServicesGrid from '@/components/homepage/ServicesGrid';
 import FAQSection from '@/components/homepage/FAQSection';
 import ContactUs from '@/components/common/ContactUs';
@@ -40,7 +40,7 @@ const page = async ({
         <>
             <SoundSystemHero imageSrc={service.heroImage} imagetitle={service.title} title={service.serviceDataHeader} description={service.description} />
             {serviceData ? <SoundSolutions title={service.serviceDataHeader} data={servicegriddata.ServiceData} /> : <div>Service Grid Data not found</div>}
-            <StackedHighlights />
+            {/* <StackedHighlights /> */}
             <ServicesGrid
                 heading="A Lot More to Explore"
                 headingSize="text-4xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl"

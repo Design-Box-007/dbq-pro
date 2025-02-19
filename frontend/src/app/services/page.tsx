@@ -1,6 +1,6 @@
 import React from 'react'
 import SoundSystemHero from '@/components/ServicesPage/SoundSystemHero'
-import StackedHighlights from '@/components/ServicesPage/StackedHighlights'
+// import StackedHighlights from '@/components/ServicesPage/StackedHighlights'
 import ServicesGrid from '@/components/homepage/ServicesGrid'
 import FAQSection from '@/components/homepage/FAQSection'
 import { faqData } from '@/data/faq'
@@ -12,7 +12,7 @@ export default function services() {
 
     <div>
       <SoundSystemHero imageSrc={images.png.img19} imagetitle='service' title='service-title' description='somedescription'/>
-      <StackedHighlights />
+      {/* <StackedHighlights /> */}
       <ServicesGrid
         heading="A Lot More to Explore"
         headingSize="text-4xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl"

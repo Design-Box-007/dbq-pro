@@ -29,6 +29,17 @@ import img12 from './icons/projector.png';
 import img13 from './icons/svg441.png'
 import img14 from './icons/Group.png'
 
+import trussing from './jpg/trussing.jpg';
+import video from './jpg/video.jpg';
+import staging from './jpg/staging.jpg';
+import machine from './jpg/special effects machine.jpg';
+import screens from './jpg/laser.jpg';
+import laser from './jpg/laser.jpg';
+import installation from './jpg/installation.jpg';
+import gobo from './jpg/gobo.jpg';
+import decor from './jpg/decor.jpg';
+import backdrops from './jpg/backdrops.jpg';
+import mapping from './jpg/3d mapping.jpg';
 const png = {
     heroimg,
     img2,
@@ -45,11 +56,22 @@ const png = {
     t2,
     t3,
     t4
-    
 
-   
 
 };
+const jpg = {
+    trussing,
+    video,
+    staging,
+    machine,
+    laser,
+    screens,
+    installation,
+    gobo,
+    decor,
+    backdrops,
+    mapping,
+}
 const icons ={
     img3,
     img4,
@@ -66,4 +88,4 @@ const icons ={
 
 };
 
-export { png, icons};
+export { png, icons, jpg};
