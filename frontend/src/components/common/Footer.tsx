@@ -81,7 +81,19 @@ const Footer = () => {
           </h1>
         </div>
       </div>
-
+      <footer className=" text-white text-center py-4">
+      <p className="text-sm">
+        This website is designed by{" "}
+        <Link
+          href="https://www.pixelpanda.ae"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-[var(--green)] hover:underline"
+        >
+          Pixel Panda Technologies
+        </Link>
+      </p>
+    </footer>
       {/* Font Import in Head */}
       <style jsx global>{`
         @font-face {

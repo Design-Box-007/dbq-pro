@@ -51,7 +51,8 @@ const ContactUs = () => {
                 <div>
                   <p className="text-[#f5f5f5]">Email</p>
                   <a href="mailto:Sales@DBQPro.com" className="text-[#f5f5f5] hover:text-[var(--green)] transition-colors">
-                    Sales@DBQPro.com
+                  info@dbqprouae.com
+            
                   </a>
                 </div>
               </div>
@@ -59,8 +60,10 @@ const ContactUs = () => {
                 <Phone className="w-6 h-6 text-[var(--green)] mt-1" />
                 <div>
                   <p className="text-[#f5f5f5]">Mobile</p>
-                  <a href="tel:+97144124876" className="text-[#f5f5f5] hover:text-[var(--green)] transition-colors">
-                    +971 44 124 8876
+                  <a href="tel:+971588661217
+" className="text-[#f5f5f5] hover:text-[var(--green)] transition-colors">
+                  +971588661217
+
                   </a>
                 </div>
               </div>
@@ -68,7 +71,7 @@ const ContactUs = () => {
                 <MapPin className="w-6 h-6 text-[var(--green)] mt-1" />
                 <div>
                   <p className="text-[#f5f5f5]">Address</p>
-                  <p className="text-[#f5f5f5]">Suite 756 031 Ines Riverway,<br />Rhiannonchester</p>
+                  <p className="text-[#f5f5f5]">Suite 756 031 Ines Riverway,602. <br />Technic Building Salah Al Din Street,<br/> Deira, Dubai-UAE</p>
                 </div>
               </div>
             </div>
