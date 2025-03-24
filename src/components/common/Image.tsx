@@ -9,10 +9,12 @@ const ImageComponent: React.FC<SoundSystemProps> = ({
   return (
     <div className="relative overflow-hidden group rounded-lg py-10">
       {/* Image container with hover effect */}
-      <div className="relative aspect-video w-full">
+      <div className="relative aspect-video w-full rounded-lg overflow-hidden">
         <Image
           src={imageSrc}
           alt={imageAlt}
+          width={1027}
+          height={600}
           className="object-cover w-full h-full rounded-lg transition-transform duration-300 ease-in-out group-hover:scale-105"
         />
       </div>

@@ -2,6 +2,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import Image from "next/image";
 import { Blog } from '@/types/index'
+import formatToHyphenated from "@/utils/formattedURL";
 // Define Props for BlogCard
 interface BlogCardProps {
   blog: Blog;
@@ -18,7 +19,7 @@ const BlogCard: React.FC<BlogCardProps> = ({ blog }) => {
       whileHover={{ y: -8 }}
       className="group flex flex-col h-[455px] md:h-[450px] bg-[#242424] rounded-lg overflow-hidden shadow-[0px_4px_14px_0px_#FBFBFB29]"
     >
-      <a href={blog.link} className="flex flex-col flex-1">
+      <a href={`/blog/${formatToHyphenated(blog.title)}`} className="flex flex-col flex-1">
         {/* Image Section */}
         <motion.div
           className="relative w-full h-[200px] overflow-hidden"

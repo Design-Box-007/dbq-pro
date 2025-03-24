@@ -17,7 +17,7 @@ const ServicesGrid: React.FC<ServiceGridProps> = ({
   titleSize = "text-sm sm:text-lg md:text-xl lg:text-2xl",
 }) => {
   return (
-    <div className="w-full py-16 px-4 sm:px-6 lg:px-9" id='servicegrid'>
+    <div className="w-full py-16 px-4 sm:px-6 lg:px-10" id='servicegrid'>
       <div className="max-w-7xl mx-auto">
         <h1 className={`text-white mb-12 ${headingSize} font-light`}>{heading}</h1>
 

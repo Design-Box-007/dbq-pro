@@ -1,3 +1,5 @@
+'use client'
+
 import { ServiceData, ServiceFAQ, Services } from '@/types/index';
 import { services } from '@/data/services';
 import formatToHyphenated from '@/utils/formattedURL';
@@ -10,13 +12,13 @@ import FAQSection from '@/components/homepage/FAQSection';
 import ContactUs from '@/components/common/ContactUs';
 import serviceData from '@/data/servicedetail';
 import { serviceFAQs } from '@/data/faq';
+import { useParams } from 'next/navigation';
 
-const page = async ({
-    params,
-}: {
-    params: Promise<{ serviceName: string }>;
-}) => {
-    const { serviceName } = await params;
+const page = () => {
+
+    const params = useParams();
+
+    const { serviceName } = params;
 
     // Find the matching service data based on the formatted service name
     const service = services?.find(

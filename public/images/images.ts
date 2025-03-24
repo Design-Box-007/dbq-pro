@@ -40,6 +40,12 @@ import gobo from './jpg/gobo.jpg';
 import decor from './jpg/decor.jpg';
 import backdrops from './jpg/backdrops.jpg';
 import mapping from './jpg/3d mapping.jpg';
+
+import Blog1Image from './jpg/blog-1.jpg';
+import Blog2Image from './jpg/blog-2.jpg';
+import Blog3Image from './jpg/blog-3.jpg';
+import Blog4Image from './jpg/blog-4.jpg';
+
 const png = {
     heroimg,
     img2,
@@ -71,8 +77,14 @@ const jpg = {
     decor,
     backdrops,
     mapping,
+
+    Blog1Image,
+    Blog2Image,
+    Blog3Image,
+    Blog4Image,
+
 }
-const icons ={
+const icons = {
     img3,
     img4,
     img5,
@@ -88,4 +100,4 @@ const icons ={
 
 };
 
-export { png, icons, jpg};
+export { png, icons, jpg };

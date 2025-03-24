@@ -5,7 +5,7 @@ import TrustedBy from './TrustedBy';
 
 const AboutDBQPro = () => {
   return (
-    <div className="w-full bg-gradient-to-b from-[#444444] to-[#282828] py-16 px-4 sm:px-6 lg:px-9 rounded-t-3xl">
+    <div className="w-full bg-gradient-to-b from-[#444444] to-[#282828] py-16 px-4 sm:px-6 lg:px-10 rounded-t-3xl">
       <div className="max-w-7xl mx-auto">
         {/* About Section */}
         <div className="mb-6">

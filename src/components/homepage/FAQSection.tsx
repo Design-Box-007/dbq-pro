@@ -21,7 +21,7 @@ const FAQSection: React.FC<FAQSectionProps> = ({
   };
 
   return (
-    <div className={`w-full py-16 px-4 sm:px-6 lg:px-9 ${className}`}>
+    <div className={`w-full py-16 px-4 sm:px-6 lg:px-10 ${className}`}>
       <div className="max-w-7xl mx-auto">
         <h2 className={`text-3xl md:text-5xl font-bold text-white mb-8 ${titleClassName}`}>
           {title}

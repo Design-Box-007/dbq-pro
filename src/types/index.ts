@@ -7,11 +7,10 @@ export interface Service {
 
 // Define Blog Type
 export interface Blog {
-  id: number;
+  id: string;
   title: string;
   description: string;
   image: string | StaticImageData; // Allow both types
-  link: string;
 }
 
 // Define Props for BlogCard
