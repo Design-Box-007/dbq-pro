@@ -14,7 +14,7 @@ import serviceData from '@/data/servicedetail';
 import { serviceFAQs } from '@/data/faq';
 import { useParams } from 'next/navigation';
 
-const page = () => {
+const Page = () => {
 
     const params = useParams();
 
@@ -58,4 +58,4 @@ const page = () => {
 
 }
 
-export default page;
+export default Page;

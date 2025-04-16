@@ -4,7 +4,7 @@ const BlogTrussingRigging = () => {
   return (
     <>
       <p className="mb-6 text-base sm:text-lg md:text-xl">
-        <strong>Introduction:</strong> Trussing and sound rigging are the unsung heroes of successful event production, playing crucial roles in supporting audio systems, lighting, decor, and safety. Whether you're setting up for a corporate conference, a music festival, or a wedding, understanding the basics of trussing and rigging can ensure everything goes smoothly.
+        <strong>Introduction:</strong> {"Trussing and sound rigging are the unsung heroes of successful event production, playing crucial roles in supporting audio systems, lighting, decor, and safety. Whether you're setting up for a corporate conference, a music festival, or a wedding, understanding the basics of trussing and rigging can ensure everything goes smoothly."}
       </p>
       <p className="mb-6 text-base sm:text-lg md:text-xl">
         At <strong>DBQ Pro UAE</strong>, we specialize in providing state-of-the-art event production services and equipment to help make your event a success. In this blog, we’ll dive into the key concepts of trussing and sound rigging, along with the essential safety guidelines and best practices. Contact us today to learn how we can elevate your next event!
@@ -13,7 +13,7 @@ const BlogTrussingRigging = () => {
         <strong>What is Trussing and Why is It Important in Events?</strong>
       </p>
       <p className="mb-6 text-base sm:text-lg md:text-xl">
-        Trussing refers to a structure made of interconnected beams (typically aluminum) used to support lights, speakers, decorations, and other stage elements. It's the backbone of any large-scale event setup, offering a secure framework for everything to hang from, making it a critical part of event production.
+        {"Trussing refers to a structure made of interconnected beams (typically aluminum) used to support lights, speakers, decorations, and other stage elements. It's the backbone of any large-scale event setup, offering a secure framework for everything to hang from, making it a critical part of event production."}
       </p>
       <ul
         style={{ marginLeft: "2rem", listStyleType: "disc" }}
@@ -41,7 +41,7 @@ const BlogTrussingRigging = () => {
         <strong>Different Types of Trussing Systems and Their Uses</strong>
       </p>
       <p className="mb-6 text-base sm:text-lg md:text-xl">
-        Trussing comes in various types, each suited to different event needs. Here's a breakdown of the most common systems:
+        {" Trussing comes in various types, each suited to different event needs. Here's a breakdown of the most common systems:"}
       </p>
       <ul
         style={{ marginLeft: "2rem", listStyleType: "disc" }}

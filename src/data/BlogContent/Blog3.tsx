@@ -4,7 +4,7 @@ const Blog3 = () => {
     return (
         <>
             <p className="mb-6 text-base font-bold sm:text-lg md:text-xl">
-                Rigging sound systems can be complex, and safety is paramount. Here's a guide to get you started:
+                {"Rigging sound systems can be complex, and safety is paramount. Here's a guide to get you started:"}
             </p>
             <ol className="list-decimal pl-5 mb-6 text-base sm:text-lg md:text-xl">
                 <li className="mb-6">
@@ -27,7 +27,7 @@ const Blog3 = () => {
                             Ensure the rigging point is solid and can support the weight of the speakers.
                         </li>
                         <li>
-                            If you're rigging from a ceiling, use certified beams or trusses designed for load-bearing.
+                            {"  If you're rigging from a ceiling, use certified beams or trusses designed for load-bearing."}
                         </li>
                     </ul>
                 </li>
@@ -59,7 +59,7 @@ const Blog3 = () => {
             <p className="mb-6 text-base sm:text-lg md:text-xl">
                 <strong>Common Rigging Tools and Their Proper Usage:</strong>
                 <br />
-                There are various rigging tools you'll need to safely hang your speakers:
+                {"  There are various rigging tools you'll need to safely hang your speakers:"}
             </p>
             <ul style={{ marginLeft: "2rem", listStyleType: "disc" }} className="list-disc space-y-2 pl-5 mb-6 text-base sm:text-lg md:text-xl">
                 <li className="mb-4">
